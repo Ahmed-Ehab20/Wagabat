@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.DetailsActivity">
+
+
+
+        <ImageView
+            android:id="@+id/dit_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dit_img"
+            android:scaleType="fitCenter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15sp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back_login"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dit_img"
+        android:layout_alignEnd="@+id/dit_img"
+        android:background="@android:color/transparent"
+        android:src="@drawable/favourite_icon"
+
+        />
+
+    <TextView
+        android:id="@+id/txt_dit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ground Beef Tacos"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:elegantTextHeight="true"
+        android:fontFamily="@font/sofiaprolight"
+        android:layout_below="@+id/dit_img"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19sp"
+        />
+
+    <ImageView
+        android:id="@+id/str_dit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/str_dit"
+        android:layout_below="@+id/txt_dit"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <TextView
+        android:id="@+id/feedtxt_dit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.5"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:fontFamily="@font/sofiaprolight"
+        android:layout_below="@+id/txt_dit"
+        android:layout_toEndOf="@+id/str_dit"
+        android:layout_marginTop="16sp"
+        />
+
+    <TextView
+        android:id="@+id/feed_grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(30+)"
+        android:textColor="@color/gr_f"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:fontFamily="@font/sofiaprolight"
+        android:layout_below="@+id/txt_dit"
+        android:layout_toEndOf="@+id/feedtxt_dit"
+        android:layout_marginTop="16sp"
+        android:layout_marginStart="5sp"
+        />
+
+    <Button
+        android:id="@+id/see_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_reviews"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/sofiaprolight"
+        android:layout_below="@+id/txt_dit"
+        android:layout_toEndOf="@+id/feed_grey"
+        android:layout_marginTop="2sp"
+        android:paddingStart="10sp"
+        />
+
+    <TextView
+        android:id="@+id/pc_dit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$9.50"
+        android:autoSizeTextType="uniform"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:fontFamily="@font/sofiaprolight"
+        android:layout_below="@+id/str_dit"
+        android:layout_marginTop="0sp"
+        android:layout_marginStart="20sp"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageButton
+        android:id="@+id/minus"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/see_rv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="80sp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/minus_rm"
+        android:background="@color/white"
+        />
+
+    <ImageButton
+        android:id="@+id/plus"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/see_rv"
+        android:layout_marginEnd="12sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/plus_add"
+        android:background="@color/white"
+
+        />
+
+    <TextView
+        android:id="@+id/qnt_dit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:autoSizeTextType="uniform"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:fontFamily="@font/sofiaprolight"
+        android:layout_below="@+id/see_rv"
+        android:layout_marginEnd="58sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8sp"
+        />
+
+    <TextView
+        android:id="@+id/dis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pc_dit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="26dp"
+        android:fontFamily="@font/sofiaprolight"
+        android:text="@string/dis"
+        android:textColor="@color/gr_f"
+        android:textSize="12sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dis"
+        android:layout_marginTop="2sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20sp"
+        android:fontFamily="@font/sofiaprolight"
+        android:text="Choice of Add On"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+
+    <ImageView
+        android:id="@+id/add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="5sp"
+        app:srcCompat="@drawable/add1"
+        />
+
+    <ImageView
+        android:id="@+id/add2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add1"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="5sp"
+        app:srcCompat="@drawable/add2"
+        />
+
+    <ImageView
+        android:id="@+id/add3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add2"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="5sp"
+        app:srcCompat="@drawable/add3"
+        />
+
+    <TextView
+        android:id="@+id/pep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25sp"
+        android:layout_toEndOf="@id/add1"
+        android:fontFamily="@font/sofiaprolight"
+        android:text="Pepper  julienned"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pep"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="42sp"
+        android:layout_toEndOf="@id/add1"
+        android:fontFamily="@font/sofiaprolight"
+        android:text="Baby spinach"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bab"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="42sp"
+        android:layout_toEndOf="@id/add1"
+        android:fontFamily="@font/sofiaprolight"
+        android:text="Mashroom"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pep_pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25sp"
+        android:layout_toEndOf="@id/pep"
+        android:fontFamily="@font/sofiaprolight"
+        android:text="+$2.30"
+        android:textAllCaps="false"
+        android:textColor="@color/gr_f"
+        android:textSize="14sp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bab_pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pep"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="42sp"
+        android:layout_toEndOf="@id/pep"
+        android:fontFamily="@font/sofiaprolight"
+        android:text="+$2.30"
+        android:textAllCaps="false"
+        android:textColor="@color/gr_f"
+        android:textSize="14sp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mash_pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bab"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="42sp"
+        android:layout_toEndOf="@id/pep"
+        android:fontFamily="@font/sofiaprolight"
+        android:text="+$2.30"
+        android:textAllCaps="false"
+        android:textColor="@color/gr_f"
+        android:textSize="14sp"
+
+        android:textStyle="bold" />
+
+
+
+    <RadioButton
+        android:id="@+id/chk1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/add1"
+        android:layout_marginTop="8sp"
+        android:layout_toEndOf="@id/pep_pc"
+        android:buttonTint="@color/orange"
+        android:checked="true"
+        android:clickable="true"
+        android:focusable="auto"
+        android:inputType="none"
+        android:rotation="180"
+        android:textIsSelectable="false" />
+
+    <RadioButton
+        android:id="@+id/chk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/add2"
+        android:layout_marginTop="8sp"
+        android:layout_toEndOf="@id/bab_pc"
+        android:buttonTint="#D4D5DA"
+        android:inputType="none"
+        android:rotation="180"
+        />
+
+    <RadioButton
+        android:id="@+id/chk3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/add3"
+        android:layout_marginTop="8sp"
+        android:layout_toEndOf="@id/mash_pc"
+        android:buttonTint="#D4D5DA"
+        android:inputType="none"
+        android:rotation="180"
+        />
+
+    <ImageButton
+        android:id="@+id/addTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="17dp"
+        android:background="@android:color/transparent"
+        android:contextClickable="true"
+        android:src="@drawable/rect_addto"
+        android:textAlignment="textEnd"
+        android:tooltipText="ADD TO CART" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/addTo"
+        android:layout_alignTop="@id/addTo"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/sofiaprolight"
+        android:text="ADD TO CART"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

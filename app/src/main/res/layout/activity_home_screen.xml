@@ -1,0 +1,1615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="clip_horizontal"
+    tools:context=".Activity.HomeScreenActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/side_rit"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35sp"
+        android:fontFamily="@font/sofiaprolight"
+        android:text="@string/delievery"
+        android:textColor="@color/bbt"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25sp"
+        android:layout_marginTop="107sp"
+        android:layout_marginEnd="78sp"
+        android:ems="12"
+        android:fontFamily="@font/sofiaprolight"
+        android:shadowColor="#000000"
+        android:text="@string/what_would_you_like_nto_order"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/srch"
+        android:layout_width="250dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26sp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rect_srch"
+        android:drawableStart="@drawable/srch_icon"
+        android:drawablePadding="5sp"
+        android:ems="12"
+        android:fontFamily="@font/sofiaprolight"
+        android:hint="@string/tfind_food_or_resturant"
+        android:inputType="textAutoComplete"
+        android:paddingStart="20sp"
+        android:textColor="#9DA4BB"
+        android:textColorHint="#9DA4BB"
+        android:textSize="16sp"
+
+
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/be_srsh"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/srch"
+        android:layout_alignBottom="@+id/bot_nav"
+        android:layout_marginTop="70sp"
+        android:layout_marginBottom="73sp">
+
+        <ScrollView
+            android:id="@+id/scroller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/real_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:id="@+id/hor1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/Burger"
+                            android:layout_width="70dp"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20sp"
+                            android:backgroundTint="@color/yellow"
+                            app:cardCornerRadius="50dp"
+                            app:cardElevation="10dp"
+                            android:clickable="true"
+                            android:visibility="visible"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7sp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="62dp"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/burg_ic"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/sofiaprolight"
+                                    android:text="@string/burger"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+
+                                    />
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/Donat"
+                            android:layout_width="70dp"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20sp"
+                            android:backgroundTint="@color/white"
+                            app:cardCornerRadius="50dp"
+                            app:cardElevation="10dp"
+                            android:clickable="true"
+                            android:visibility="visible"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7sp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="62dp"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/don_ic"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/sofiaprolight"
+                                    android:text="@string/donat"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/horz_grey"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+
+
+                                    />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/Pizza"
+                            android:layout_width="70dp"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20sp"
+                            android:backgroundTint="@color/white"
+                            app:cardCornerRadius="50dp"
+                            app:cardElevation="10dp"
+                            android:clickable="true"
+                            android:visibility="visible"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7sp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="62dp"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/pizz_ic"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/sofiaprolight"
+                                    android:text="@string/pizza"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/horz_grey"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+
+
+                                    />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/Mexican"
+                            android:layout_width="70dp"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20sp"
+                            android:backgroundTint="@color/white"
+                            app:cardCornerRadius="50dp"
+                            app:cardElevation="10dp"
+                            android:clickable="true"
+                            android:visibility="visible"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7sp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="62dp"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/mix_ic"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/sofiaprolight"
+                                    android:text="@string/mexican"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/horz_grey"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+
+
+                                    />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/Asian"
+                            android:layout_width="70dp"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="20sp"
+                            android:backgroundTint="@color/white"
+                            app:cardCornerRadius="50dp"
+                            app:cardElevation="10dp"
+                            android:clickable="true"
+                            android:visibility="visible"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7sp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="62dp"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/asi_ic"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/sofiaprolight"
+                                    android:text="@string/asian"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/horz_grey"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+
+
+                                    />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/Sandwiches"
+                            android:layout_width="70dp"
+                            android:layout_height="115dp"
+                            android:layout_marginEnd="10sp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/white"
+                            app:cardCornerRadius="50dp"
+                            app:cardElevation="10dp"
+                            android:clickable="true"
+                            android:visibility="visible"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7sp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="62dp"
+                                    android:layout_height="55dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/burg_ic"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/sofiaprolight"
+                                    android:text="@string/sandwich"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/horz_grey"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+
+                                    />
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+
+                </HorizontalScrollView>
+
+
+                <TextView
+                    android:id="@+id/feu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hor1"
+                    android:layout_marginTop="10sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20sp"
+                    android:fontFamily="@font/sofiaprolight"
+                    android:text="@string/feautred_restaurants"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:id="@+id/view_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hor1"
+                    android:layout_alignParentEnd="true"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/arr_view"
+                    android:fontFamily="@font/sofiaprolight"
+                    android:text="@string/view_all"
+                    android:textColor="@color/orange"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/hor2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/feu"
+                    >
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+                <TextView
+                    android:id="@+id/pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hor2"
+                    android:layout_marginStart="20sp"
+                    android:fontFamily="@font/sofiaprolight"
+                    android:text="@string/popular_items"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <LinearLayout
+                    android:layout_below="@+id/pop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true">
+
+                    <GridLayout
+                        android:id="@+id/grid_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:layout_below="@+id/pop"
+                        android:rowCount="4"
+                        android:columnCount="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/grid1"
+                            android:layout_width="155dp"
+                            android:layout_height="216dp"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            app:cardCornerRadius="15dp"
+                            android:layout_gravity="fill"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginEnd="0sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginBottom="10sp"
+                            android:backgroundTint="@color/white"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/grid_img1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    app:srcCompat="@drawable/grid_img1"
+                                    />
+
+
+
+                                <TextView
+                                    android:id="@+id/feedgrid_txt1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/grid_img1"
+                                    android:layout_alignEnd="@id/grid_img1"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginEnd="90sp"
+                                    android:layout_marginTop="10sp"
+                                    android:gravity="center"
+                                    android:text="$5.50"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/feed_ic"
+
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/feed_gridimg1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/feed_gridtxt"
+                                    android:layout_marginTop="100sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/grid_img1"
+                                    android:layout_alignStart="@+id/feed_gridimg1"
+                                    android:layout_alignTop="@+id/feed_gridimg1"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginTop="5sp"
+                                    android:gravity="center"
+                                    android:text="4.5"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/by_txt1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg1"
+                                    android:layout_alignTop="@+id/feed_gridimg1"
+                                    android:layout_marginStart="40sp"
+                                    android:layout_marginTop="6.5sp"
+                                    android:gravity="center"
+                                    android:text="(25+)"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold"
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/str_icon1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg1"
+                                    android:layout_alignTop="@+id/feed_gridimg1"
+                                    android:layout_marginStart="27sp"
+                                    android:layout_marginTop="9sp"
+                                    android:gravity="center"
+                                    android:src="@drawable/str_ic" />
+
+                                <TextView
+                                    android:id="@+id/sal_sal1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/salmon_salad"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/feed_gridimg1"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/bkd_sal1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/baked_salmon_fish"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/sal_sal1"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/grid2"
+                            android:layout_width="155dp"
+                            android:layout_height="216dp"
+                            android:layout_row="0"
+                            android:layout_column="1"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_marginEnd="0sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginBottom="10sp"
+                            android:backgroundTint="@color/white"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/grid_img2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    app:srcCompat="@drawable/grid_img2"
+                                    />
+
+
+
+                                <TextView
+                                    android:id="@+id/feedgrid_txt2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/grid_img2"
+                                    android:layout_alignEnd="@id/grid_img2"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginEnd="90sp"
+                                    android:layout_marginTop="10sp"
+                                    android:gravity="center"
+                                    android:text="$8.25"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/feed_ic"
+
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/feed_gridimg2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/feed_gridtxt"
+                                    android:layout_marginTop="100sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/grid_img2"
+                                    android:layout_alignStart="@+id/feed_gridimg2"
+                                    android:layout_alignTop="@+id/feed_gridimg2"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginTop="5sp"
+                                    android:gravity="center"
+                                    android:text="4.5"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/by_txt2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg2"
+                                    android:layout_alignTop="@+id/feed_gridimg2"
+                                    android:layout_marginStart="40sp"
+                                    android:layout_marginTop="6.5sp"
+                                    android:gravity="center"
+                                    android:text="(25+)"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold"
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/str_icon2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg2"
+                                    android:layout_alignTop="@+id/feed_gridimg2"
+                                    android:layout_marginStart="27sp"
+                                    android:layout_marginTop="9sp"
+                                    android:gravity="center"
+                                    android:src="@drawable/str_ic" />
+
+                                <TextView
+                                    android:id="@+id/sal_sal2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/salmon_salad"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/feed_gridimg2"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/bkd_sal2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/baked_salmon_fish"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/sal_sal2"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/grid3"
+                            android:layout_width="155dp"
+                            android:layout_height="216dp"
+                            android:layout_row="1"
+                            android:layout_column="0"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginEnd="0sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginBottom="10sp"
+                            android:backgroundTint="@color/white"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/grid_img3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    app:srcCompat="@drawable/grid_img2"
+                                    />
+
+
+
+                                <TextView
+                                    android:id="@+id/feedgrid_txt3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/grid_img3"
+                                    android:layout_alignEnd="@id/grid_img3"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginEnd="90sp"
+                                    android:layout_marginTop="10sp"
+                                    android:gravity="center"
+                                    android:text="$5.50"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/feed_ic"
+
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/feed_gridimg3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/feed_gridtxt"
+                                    android:layout_marginTop="100sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/grid_img3"
+                                    android:layout_alignStart="@+id/feed_gridimg3"
+                                    android:layout_alignTop="@+id/feed_gridimg3"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginTop="5sp"
+                                    android:gravity="center"
+                                    android:text="4.5"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/by_txt3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg3"
+                                    android:layout_alignTop="@+id/feed_gridimg3"
+                                    android:layout_marginStart="40sp"
+                                    android:layout_marginTop="6.5sp"
+                                    android:gravity="center"
+                                    android:text="(25+)"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold"
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/str_icon3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg3"
+                                    android:layout_alignTop="@+id/feed_gridimg3"
+                                    android:layout_marginStart="27sp"
+                                    android:layout_marginTop="9sp"
+                                    android:gravity="center"
+                                    android:src="@drawable/str_ic" />
+
+                                <TextView
+                                    android:id="@+id/sal_sal3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Salmon Salad"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/feed_gridimg3"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/bkd_sal3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Baked salmon fish"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/sal_sal3"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/grid4"
+                            android:layout_width="155dp"
+                            android:layout_height="216dp"
+                            android:layout_row="1"
+                            android:layout_column="1"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_marginEnd="0sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginBottom="10sp"
+                            android:backgroundTint="@color/white"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/grid_img4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    app:srcCompat="@drawable/grid_img1"
+                                    />
+
+
+
+                                <TextView
+                                    android:id="@+id/feedgrid_txt4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/grid_img4"
+                                    android:layout_alignEnd="@id/grid_img4"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginEnd="90sp"
+                                    android:layout_marginTop="10sp"
+                                    android:gravity="center"
+                                    android:text="$5.50"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/feed_ic"
+
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/feed_gridimg4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/feed_gridtxt"
+                                    android:layout_marginTop="100sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/grid_img4"
+                                    android:layout_alignStart="@+id/feed_gridimg4"
+                                    android:layout_alignTop="@+id/feed_gridimg4"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginTop="5sp"
+                                    android:gravity="center"
+                                    android:text="4.5"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/by_txt4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg4"
+                                    android:layout_alignTop="@+id/feed_gridimg4"
+                                    android:layout_marginStart="40sp"
+                                    android:layout_marginTop="6.5sp"
+                                    android:gravity="center"
+                                    android:text="(25+)"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold"
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/str_icon4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg4"
+                                    android:layout_alignTop="@+id/feed_gridimg4"
+                                    android:layout_marginStart="27sp"
+                                    android:layout_marginTop="9sp"
+                                    android:gravity="center"
+                                    android:src="@drawable/str_ic" />
+
+                                <TextView
+                                    android:id="@+id/sal_sal4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Salmon Salad"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/feed_gridimg4"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/bkd_sal4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Baked salmon fish"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/sal_sal4"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/grid5"
+                            android:layout_width="155dp"
+                            android:layout_height="216dp"
+                            android:layout_row="2"
+                            android:layout_column="0"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            app:cardCornerRadius="15dp"
+                            android:layout_gravity="fill"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginEnd="0sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginBottom="10sp"
+                            android:backgroundTint="@color/white"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/grid_img5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    app:srcCompat="@drawable/grid_img1"
+                                    />
+
+
+
+                                <TextView
+                                    android:id="@+id/feedgrid_txt5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/grid_img5"
+                                    android:layout_alignEnd="@id/grid_img5"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginEnd="90sp"
+                                    android:layout_marginTop="10sp"
+                                    android:gravity="center"
+                                    android:text="$5.50"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/feed_ic"
+
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/feed_gridimg5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/feed_gridtxt"
+                                    android:layout_marginTop="100sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/grid_img5"
+                                    android:layout_alignStart="@+id/feed_gridimg5"
+                                    android:layout_alignTop="@+id/feed_gridimg5"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginTop="5sp"
+                                    android:gravity="center"
+                                    android:text="4.5"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/by_txt5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg5"
+                                    android:layout_alignTop="@+id/feed_gridimg5"
+                                    android:layout_marginStart="40sp"
+                                    android:layout_marginTop="6.5sp"
+                                    android:gravity="center"
+                                    android:text="(25+)"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold"
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/str_icon5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg5"
+                                    android:layout_alignTop="@+id/feed_gridimg5"
+                                    android:layout_marginStart="27sp"
+                                    android:layout_marginTop="9sp"
+                                    android:gravity="center"
+                                    android:src="@drawable/str_ic" />
+
+                                <TextView
+                                    android:id="@+id/sal_sal5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/salmon_salad"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/feed_gridimg5"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/bkd_sal5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/baked_salmon_fish"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/sal_sal5"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/grid6"
+                            android:layout_width="155dp"
+                            android:layout_height="216dp"
+                            android:layout_row="2"
+                            android:layout_column="1"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_marginEnd="0sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginBottom="10sp"
+                            android:backgroundTint="@color/white"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/grid_img6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    app:srcCompat="@drawable/grid_img2"
+                                    />
+
+
+
+                                <TextView
+                                    android:id="@+id/feedgrid_txt6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/grid_img6"
+                                    android:layout_alignEnd="@id/grid_img6"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginEnd="90sp"
+                                    android:layout_marginTop="10sp"
+                                    android:gravity="center"
+                                    android:text="$8.25"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/feed_ic"
+
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/feed_gridimg6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/feed_gridtxt"
+                                    android:layout_marginTop="100sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/grid_img6"
+                                    android:layout_alignStart="@+id/feed_gridimg6"
+                                    android:layout_alignTop="@+id/feed_gridimg6"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginTop="5sp"
+                                    android:gravity="center"
+                                    android:text="4.5"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/by_txt6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg6"
+                                    android:layout_alignTop="@+id/feed_gridimg6"
+                                    android:layout_marginStart="40sp"
+                                    android:layout_marginTop="6.5sp"
+                                    android:gravity="center"
+                                    android:text="(25+)"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold"
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/str_icon6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg6"
+                                    android:layout_alignTop="@+id/feed_gridimg6"
+                                    android:layout_marginStart="27sp"
+                                    android:layout_marginTop="9sp"
+                                    android:gravity="center"
+                                    android:src="@drawable/str_ic" />
+
+                                <TextView
+                                    android:id="@+id/sal_sal6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/salmon_salad"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/feed_gridimg6"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/bkd_sal6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/baked_salmon_fish"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/sal_sal6"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/grid7"
+                            android:layout_width="155dp"
+                            android:layout_height="216dp"
+                            android:layout_row="3"
+                            android:layout_column="0"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginEnd="0sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginBottom="10sp"
+                            android:backgroundTint="@color/white"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/grid_img7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    app:srcCompat="@drawable/grid_img2"
+                                    />
+
+
+
+                                <TextView
+                                    android:id="@+id/feedgrid_txt7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/grid_img7"
+                                    android:layout_alignEnd="@id/grid_img7"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginEnd="90sp"
+                                    android:layout_marginTop="10sp"
+                                    android:gravity="center"
+                                    android:text="$5.50"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/feed_ic"
+
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/feed_gridimg7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/feed_gridtxt"
+                                    android:layout_marginTop="100sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/grid_img7"
+                                    android:layout_alignStart="@+id/feed_gridimg7"
+                                    android:layout_alignTop="@+id/feed_gridimg7"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginTop="5sp"
+                                    android:gravity="center"
+                                    android:text="4.5"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/by_txt7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg7"
+                                    android:layout_alignTop="@+id/feed_gridimg7"
+                                    android:layout_marginStart="40sp"
+                                    android:layout_marginTop="6.5sp"
+                                    android:gravity="center"
+                                    android:text="(25+)"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold"
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/str_icon7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg7"
+                                    android:layout_alignTop="@+id/feed_gridimg7"
+                                    android:layout_marginStart="27sp"
+                                    android:layout_marginTop="9sp"
+                                    android:gravity="center"
+                                    android:src="@drawable/str_ic" />
+
+                                <TextView
+                                    android:id="@+id/sal_sal7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Salmon Salad"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/feed_gridimg7"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/bkd_sal7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Baked salmon fish"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/sal_sal7"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/grid8"
+                            android:layout_width="155dp"
+                            android:layout_height="216dp"
+                            android:layout_row="3"
+                            android:layout_column="1"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_marginEnd="0sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginBottom="10sp"
+                            android:backgroundTint="@color/white"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/grid_img8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    app:srcCompat="@drawable/grid_img1"
+                                    />
+
+
+
+                                <TextView
+                                    android:id="@+id/feedgrid_txt8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/grid_img8"
+                                    android:layout_alignEnd="@id/grid_img8"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginEnd="90sp"
+                                    android:layout_marginTop="10sp"
+                                    android:gravity="center"
+                                    android:text="$5.50"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/feed_ic"
+
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/feed_gridimg8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/feed_gridtxt"
+                                    android:layout_marginTop="100sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/grid_img8"
+                                    android:layout_alignStart="@+id/feed_gridimg8"
+                                    android:layout_alignTop="@+id/feed_gridimg8"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginTop="5sp"
+                                    android:gravity="center"
+                                    android:text="4.5"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/by_txt8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg8"
+                                    android:layout_alignTop="@+id/feed_gridimg8"
+                                    android:layout_marginStart="40sp"
+                                    android:layout_marginTop="6.5sp"
+                                    android:gravity="center"
+                                    android:text="(25+)"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold"
+
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/str_icon8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignStart="@id/feed_gridimg8"
+                                    android:layout_alignTop="@+id/feed_gridimg8"
+                                    android:layout_marginStart="27sp"
+                                    android:layout_marginTop="9sp"
+                                    android:gravity="center"
+                                    android:src="@drawable/str_ic" />
+
+                                <TextView
+                                    android:id="@+id/sal_sal8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Salmon Salad"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/feed_gridimg8"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/bkd_sal8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Baked salmon fish"
+                                    android:textColor="@color/gr_f"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/sal_sal8"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginStart="8sp"
+                                    />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+                    </GridLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bot_nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemIconSize="28dp"
+        app:itemIconTint="@drawable/selector"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu_nav"
+        />
+
+
+</RelativeLayout>

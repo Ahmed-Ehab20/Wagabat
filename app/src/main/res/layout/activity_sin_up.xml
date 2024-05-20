@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Sin_upActivity"
+    android:background="@drawable/scr_rec"
+    android:layout_gravity="center"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rightec_sin"
+        android:layout_alignParentEnd="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/leftec_sin2"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/leftec_sin"
+        />
+
+    <TextView
+        android:id="@+id/txt_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26sp"
+        android:layout_marginTop="98sp"
+        android:layout_marginBottom="23dp"
+        android:fontFamily="@font/sofiaprolight"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/fullname_sin"
+        android:layout_width="355sp"
+        android:layout_height="45dp"
+        android:ems="16"
+        android:inputType="textPersonName"
+        android:hint="Enter full name"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sofiaprolight"
+        android:textColorHint="#C4C4C4"
+        android:layout_below="@+id/txt_signup"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rect_fullname"
+        android:paddingStart="20sp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/email_sin"
+        android:layout_width="355sp"
+        android:layout_height="45dp"
+        android:ems="16"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sofiaprolight"
+        android:hint="Enter E-mail"
+        android:textColorHint="#C4C4C4"
+        android:layout_below="@+id/fullname_sin"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rect_fullname"
+        android:paddingStart="20sp"
+
+
+
+        />
+
+    <EditText
+        android:id="@+id/pass_sin"
+        android:layout_width="355sp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/email_sin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rect_fullname"
+        android:ems="16"
+        android:fontFamily="@font/sofiaprolight"
+        android:hint="Enter Passowrd"
+        android:inputType="textPassword"
+        android:paddingStart="20sp"
+        android:textColor="@color/black"
+
+
+        android:textColorHint="#C4C4C4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full name"
+        android:textColor="@color/baby_grey"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/sofiaprolight"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20sp"
+        android:layout_below="@+id/txt_signup"
+        android:layout_marginTop="10sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textColor="@color/baby_grey"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/sofiaprolight"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20sp"
+        android:layout_below="@+id/fullname_sin"
+        android:layout_marginTop="2sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/baby_grey"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/sofiaprolight"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20sp"
+        android:layout_below="@+id/email_sin"
+        android:layout_marginTop="2sp"
+
+        />
+
+    <Button
+        android:id="@+id/sin_up"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/pass_sin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/orange"
+        android:backgroundTintMode="screen"
+        android:fontFamily="@font/sofiaprolight"
+        android:foregroundTint="@color/orange"
+        android:foregroundTintMode="screen"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="27.5sp" />
+
+    <TextView
+        android:id="@+id/alr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90sp"
+        android:layout_alignTop="@id/sin_up"
+        android:fontFamily="@font/sofiaprolight"
+        android:textColor="@color/dark_grey"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:layout_below="@id/sin_up"
+        android:layout_alignStart="@+id/alr"
+        android:layout_marginStart="160sp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/sofiaprolight"
+        android:gravity="center"
+        android:text="Login"
+        android:textSize="12sp"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+
+        />
+
+
+    <ImageView
+        android:layout_width="102dp"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/alr"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/line_sin"
+
+        />
+
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="102dp"
+        android:layout_height="1sp"
+        android:layout_below="@+id/alr"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/line_sin" />
+
+    <TextView
+        android:id="@+id/sin_w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="175sp"
+        android:fontFamily="@font/sofiaprolight"
+        android:text="Sign in with"
+        android:textColor="#5B5B5E"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/lgbtn_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40sp"
+        android:fontFamily="@font/sofiaprolight"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:cornerRadius="50sp"
+        android:gravity="center"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:foregroundGravity="center"
+        />
+
+    <Button
+        android:id="@+id/sinbtn_go"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40sp"
+        android:backgroundTint="@color/white"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/sofiaprolight"
+        android:gravity="center"
+        android:text="GOOGLE"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:paddingStart="5sp"
+        app:cornerRadius="27.5sp"
+        app:icon="@drawable/go_ic"
+        android:paddingTop="7sp"
+        app:iconPadding="2sp"
+        app:iconTint="#00FFFFFF"
+        app:iconTintMode="screen"
+        />
+
+</RelativeLayout>

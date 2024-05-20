@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.NextttActivity">
+
+    <ImageView
+        android:id="@+id/cent_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="40sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/skp3"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ecl3" />
+
+    <Button
+        android:id="@+id/skp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:outlineProvider="none"
+        app:icon="@drawable/circ_arr"
+        app:iconTint="#00FFFFFF"
+        app:iconTintMode="screen" />
+
+    <TextView
+        android:id="@+id/pik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/sofiaprolight"
+        android:text="Pickup delivery at\n \t \t \t \t your door"
+        android:textColor="@color/lue_lack"
+
+        android:textSize="35sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pik"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/sofiaprolight"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:text="Our app can send you everywhere, even space.\nFor only $2.99 per mounth"
+        android:textColor="@color/lue_lack"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

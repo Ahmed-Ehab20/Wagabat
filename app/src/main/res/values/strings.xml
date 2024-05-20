@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">FoodHub</string>
+    <string name="sign"><u>Sign in</u></string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+    <string name="forget"><u>Forget password?</u></string>
+    <string name="forget_password">Forget password?</string>
+    <string name="see_reviews"><u>See Reviews</u></string>
+    <string name="dis">Brown the beef better. Lean ground beef – I like to use 85% lean angus. Garlic – use fresh chopped. Spices – chili powder, cumin, onion powder.</string>
+    <string name="foodhub">Wagbat</string>
+    <string name="your_favourite_foods_delivered_nfast_at_your_door">Your favourite foods delivered\nfast at your door.</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="sign_in_with">Sign in with</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="google">GOOGLE</string>
+    <string name="start_with_email_or_phone">Start with email or phone</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="delievery">\t \t \t \t \t Delievery to\n\t \t \t \t \t \t New Cairo \nTechnological University</string>
+    <string name="what_would_you_like_nto_order">What would you like\nto order</string>
+    <string name="tfind_food_or_resturant">\tFind food or restaurant...</string>
+    <string name="burger">Burger</string>
+    <string name="donat">Donat</string>
+    <string name="pizza">Pizza</string>
+    <string name="mexican">Mexican</string>
+    <string name="asian">Asian</string>
+    <string name="sandwich">Sandwich</string>
+    <string name="feautred_restaurants">Feautred restaurants</string>
+    <string name="view_all">View All</string>
+    <string name="popular_items">Popular items</string>
+    <string name="salmon_salad">Salmon Salad</string>
+    <string name="baked_salmon_fish">Baked salmon fish</string>
+    <string name="default_web_client_id" translatable="false">YOUR_WEB_CLIENT_ID</string>
+    <string name="facebook_app_id">1481219839049146</string>
+    <string name="add_to_crate">Add to Crate</string>
+    <string name="remove_from_crate">Remove from Crate</string>
+    <string name="title_activity_all_rest">AllRest</string>
+
+
+</resources>
